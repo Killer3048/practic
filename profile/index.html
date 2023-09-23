@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <title>Путешествия по России</title>
+    <meta name="author" content="VEM">
+    <meta name="keywords" content="Путешествия, Россия, карты, отдых, travel, map, Russia, москва, Кремль, достопримечательности, поехать на отдых, курорт, эксркурсии">
+    <meta name="description" content="Путешествия по России. Настоящая страна не в выпусках новостей, а здесь.">
+    <meta data-n-head="ssr" name="format-detection" content="telephone=no">
+    <meta data-n-head="ssr" name="referrer" content="origin">
+    <meta data-n-head="ssr" name="msapplication-TileColor" content="#2A2C2F">
+    <meta data-n-head="ssr" name="og:title" content="Путешествия по России">
+    <meta data-n-head="ssr" name="og:site_name" content="Путешествия по России">
+    <meta data-n-head="ssr" name="og:url" content="Путешествия по России. Настоящая страна не в выпусках новостей, а здесь.">
+    <meta data-n-head="ssr" name="og:url" content="">
+    <meta data-n-head="ssr" name="og:description" content="Путешествия по России. Настоящая страна не в выпусках новостей, а здесь.">
+    <meta data-n-head="ssr" name="og:type" content="website">
+    <meta data-n-head="ssr" name="og:locale" content="ru_RU">
+    <meta data-n-head="ssr" name="og:image" content="./images/favicon.png">
+    <meta data-n-head="ssr" name="og:image:width" content="952">
+    <meta data-n-head="ssr" name="og:image:height" content="270">
+    <meta data-n-head="ssr" name="fb:app_id" content="undefined">
+    <meta data-n-head="ssr" name="twitter:card" content="summary_large_image">
+    <meta data-n-head="ssr" name="twitter:site" content="">
+    <meta data-n-head="ssr" name="twitter:title" content="Путешествия по России. Настоящая страна не в выпусках новостей, а здесь.">
+    <meta data-n-head="ssr" name="twitter:description" content="Путешествия по России. Настоящая страна не в выпусках новостей, а здесь.">
+    <meta data-n-head="ssr" name="twitter:image" content="">
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="./pages/index.css">
+</head>
+
+<body class="page">
+
+    <header class="header">
+        <a class="header__nav-link" href="../index.html" target="_self"><div class="header__logo"></div></a>
+        <div class="header__nav">
+            <a class="header__nav-link" href="../blog/index.html" target="_self">Блог</a>
+            <a class="header__nav-link" href="../404.html" target="_self">Контакты</a>
+            <a class="header__nav-link" href="../profile/index.html" target="_self">
+                <img src="../images/profile-icon.svg" alt="" width="30">
+            </a>
+        </div>
+        <div class="header__burger-menu">
+            <div class="burger-icon">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="profile">
+            <img src="../images/ava.jpg" alt="Ава" class="profile__ava">
+            <div class="profile__info">
+                <h1 class="profile__info-name">Геннадий Гугнин</h1>
+                <button class="profile__info-edit" aria-label="что-то" type="button"></button>
+                <p class="profile__info-job">Исследователь океана</p>
+            </div>
+            <button class="profile__button-add" aria-label="что-то" type="button"></button>
+        </section>
+
+        <section class="elements">
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__info">© 2023 VEM</p>
+    </footer>
+
+
+    <div class="popup popup_type_profile">
+        <div class="popup__container">
+            <h2 class="popup__title">Редактировать профиль</h2>
+            <button class="popup__btn-close" aria-label="что-то" type="button"></button>
+            <form class="popup__form" name="formProfile">
+                <input id='name-input' class="popup__form-input popup__form-input_type_name" type="text" name="name" value="" placeholder="Имя" required>
+                <span class="popup__form-error name-input-error"></span>
+                <input id='job-input' class="popup__form-input popup__form-input_type_job" type="text" name="job" value="" placeholder="Профессия" required>
+                <span class="popup__form-error job-input-error"></span>
+                <button type="submit" class="popup__form-btn">Сохранить</button>
+            </form>
+        </div>
+    </div>
+    
+    <div class="popup popup_type_mesto">
+        <div class="popup__container">
+            <h2 class="popup__title">Новое место</h2>
+            <button class="popup__btn-close" aria-label="что-то" type="button"></button>
+            <form class="popup__form" name="mestoProfile">
+                <input id="image-input" class="popup__form-input popup__form-input_type_name" type="text" name="imageName" value="" placeholder="Название" required>
+                <span class="popup__form-error image-input-error"></span>
+                <input id="url-input" class="popup__form-input popup__form-input_type_job" type="url" name="imageSrc" value="" placeholder="Ссылка на картинку">
+                <span class="popup__form-error url-input-error"></span>
+                <button type="submit" class="popup__form-btn">Сохранить</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="popup popup_type_image">
+        <div class="popup__image-container">
+            <button class="popup__btn-close" aria-label="что-то" type="button"></button>
+            <img src="." alt="Картинка" class="popup__image">
+            <h4 class="popup__image-title"></h4>
+        </div>
+    </div>
+
+    <template class="template-card">
+        <div class="card">
+            <button class="card__trash" type="button"></button>
+            <img class="card__image" src="." alt="Йошкар-Ола">
+            <div class="card__container">
+                <h3 class="card__title">Йошкар-Ола</h3>
+                <button class="card__like" aria-label="что-то" type="button"></button>
+            </div>
+        </div>
+    </template>
+    <script src="../scripts/constants.js"></script>
+    <script src="../scripts/cards.js"></script>
+    <script src="../scripts/validate.js"></script>
+    <script src="../scripts/header.js"></script>
+</body>
+
+</html>
