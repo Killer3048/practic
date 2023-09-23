@@ -42,7 +42,7 @@ const initialCards = [{
     },
     {
         name: "Столбы - Красноярск",
-        link: "http://x-material.ru/wp-content/uploads/2019/07/BDgk3StO7Jk.jpg",
+        link: "https://travel-dom.ru/wp-content/uploads/2020/05/ui-5b72a12edbd799.96901974.jpeg",
     },
     {
         name: "Урочище Аккурум",
